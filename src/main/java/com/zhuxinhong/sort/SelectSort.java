@@ -2,6 +2,7 @@ package com.zhuxinhong.sort;
 
 /**
  * Created by zhuxh on 16/5/29.
+ * 简单选择排序
  */
 public class SelectSort {
 
