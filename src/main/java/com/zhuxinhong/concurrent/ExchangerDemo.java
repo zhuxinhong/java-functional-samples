@@ -26,24 +26,24 @@ public class ExchangerDemo {
             }
         });
 
-        threadPool.execute(new Runnable() {
-            @Override
-            public void run() {
-                String aa = "我是TEST";
-                try {
-                    exgr.exchange(aa);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
+//        threadPool.execute(new Runnable() {
+//            @Override
+//            public void run() {
+//                String aa = "我是TEST";
+//                try {
+//                    exgr.exchange(aa);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        });
 
         threadPool.execute(new Runnable() {
             @Override
             public void run() {
                 String b = "银行流水B";
                 try {
-                    String a = exgr.exchange("B");
+                    String a = exgr.exchange(b);
                     System.out.println(a);
                 } catch (InterruptedException e) {
                     e.printStackTrace();

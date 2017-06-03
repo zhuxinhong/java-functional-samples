@@ -32,7 +32,7 @@ class Exec implements Runnable {
     @Override
     public void run() {
         while (i > 0) {
-            System.out.println(i);
+            System.out.println(Thread.currentThread().getName() + " -- " + i);
             i--;
         }
     }
