@@ -14,6 +14,6 @@
 * java7 JAVA7 新特性
 * search 树结构, 二分法
 * sort 常见排序方法
-* 字符串性能
+* string 字符串性能
 * threads 多线程例子
 * utils 工具类
